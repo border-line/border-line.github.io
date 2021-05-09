@@ -20,7 +20,7 @@ title                    : "Love in IT"
 title_separator          : "-"
 subtitle                 : "IT로 따뜻한 세상을 만듭니다"
 name                     : "john"
-description              : "기술과 인문학의 교차점에서 세상의 작은 부분을 바꾸는 매력적인 혁신가 \n IT는 현재의 기술과 방법으로 해결하지 못하는 이웃의 문제를 해결할 수 있도록 주어진 선물이라고 생각합니다"
+description              : ""
 url                      : "https://beautifultools.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -96,7 +96,7 @@ analytics:
 author:
   name             : "정주온"
   avatar           : "/assets/images/avatar.jpeg"
-  bio              : "IT는 현재의 기술과 방법으로 해결하지 못하는 이웃의 문제를 해결할 수 있도록 주어진 선물이라고 생각하며 기술과 인문학의 교차점에서 세상의 작은 부분을 바꾸는 매력적인 혁신가"
+  bio              : "**기술과 인문학의 교차점**에서 세상의 **작은 부분**을 바꾸는 **매력적인 혁신가** <br/><br/> IT는 현재의 기술과 방법으로 해결하지 못하는 이웃의 문제를 해결할 수 있는 선물입니다."
   location         : "서울"
   email            : "lord1229@gmail.com"
   links:
@@ -114,7 +114,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/beautifultools?tab=repositories"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -275,8 +275,10 @@ defaults:
       type: posts
     values:
       layout: single
+      sidebar:
+        nav: "posts"
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
