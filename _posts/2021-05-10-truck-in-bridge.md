@@ -2,9 +2,7 @@
 layout: single
 title : "[프로그래머스] 다리를 지나는 트럭 - 성능개선"
 category: "algo"
-
 ---
-
 문제 설명 : https://programmers.co.kr/learn/courses/30/lessons/42583
 
 <u>쉽게 생각되는 풀이</u>와 <u>조금 복잡하지만 성능을 좋은 풀이</u>를 소개한다. 
