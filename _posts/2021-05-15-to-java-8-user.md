@@ -5,7 +5,7 @@ category: "share"
 
 ---
 
-이 글은 잘 안되고 있는 것을 비판하기 보다는 저를 포함한 보다 많은 사람들이 생산성을 높이는 것에 관심을 두고 새로운 것을 도전하기를 바라는 마음에서 작성되었다는 점을 참고해서 읽어주시기 바랍니다.
+이 글은 잘 안되고 있는 것을 비판하기 보다는 저를 포함한 보다 많은 사람들이 생산성을 높이는 것에 관심을 두고 새로운 것을 도전하도록 하기 위해 작성되었습니다.
 
 ![image-20210519165749723](/assets/images/image-20210519165749723.png)
 
@@ -23,7 +23,7 @@ category: "share"
 
 그러면 JAVA8을 사용하는 팀과 최신 버전의 JAVA 또는 개발 난이도가 훨씬 쉽거나 컴퓨팅 환경 변화를 잘 반영하는 언어(Node, Go, Python, Elixir, Node, Rust 등)를 사용하는 팀 중 누가 더 높은 생산성을 낼까요?
 
-이런 질문을 던지는 이유는 2020년 jetbrain 조사(https://www.jetbrains.com/ko-kr/lp/devecosystem-2020/java/)에 따르면 **여전히 75%의 개발자들이 JAVA 8을 사용하고 있는 것으로 확인**되기 때문입니다. (우리 회사에서도 JAVA8을 사용하고 있습니다.)
+이런 질문을 던지는 이유는 [2020년 jetbrain 조사](https://www.jetbrains.com/ko-kr/lp/devecosystem-2020/java/)에 따르면 **여전히 75%의 개발자들이 JAVA 8을 사용하고 있는 것으로 확인**되기 때문입니다. (우리 회사에서도 JAVA8을 사용하고 있습니다.)
 
 위에 던질 질문에 답을 하다보면 자연스럽게 2가지 선택지가 우리 앞에 놓이게 됩니다.
 
@@ -54,19 +54,15 @@ JAVA8이 2014년에 나왔습니다. 그리고 곧 JAVA 17이 나오는 상황(2
 
 Oracle은 2019년 1월부터 추가로 배포되는 Oracle Java는 기존 BCL 라이센스가 아닌 OTN(Oracle Technical Network) 라이센스로 배포가 되며 해당 버전들을 사용하기 위해서는 JAVA SE 구독 서비스를 사용해야 한다고 발표했습니다.
 
-이 때문에 2019년 1월 이후에 공개되는 JAVA를 사용하면 비용이 발생하는 것으로 오해를 하고 있는 경우가 있을 수 있습니다. JAVA는 무료인가에 대해 Oracle 공식 홈페이지에서 아래와 같이 답변을 하고 있습니다.
+이 때문에 2019년 1월 이후에 공개되는 JAVA를 사용하면 비용이 발생하는 것으로 오해를 하고 있는 경우가 있을 수 있습니다. JAVA는 무료인가에 대해 [Oracle 공식 홈페이지 SDK FAQ](https://www.oracle.com/kr/java/technologies/javase/jdk-faqs.html)에서 아래와 같이 무료라고 답변을 하고 있습니다.
 
 ![image-20210518004058137](/assets/images/image-20210518004058137.png)
-
-https://www.oracle.com/kr/java/technologies/javase/jdk-faqs.html
 
 또한 매 버전 릴리즈마다 유료 버전인 Oracle JDK와 Open JDK를 제공하고 있는데 패키징 부분을 제외하고 기능적인 면에는 차이가 없다고 이야기 합니다.
 
 ![image-20210518220808396](/assets/images/image-20210518220808396.png)
 
-https://www.oracle.com/kr/java/technologies/javase/jdk-faqs.html
-
-Open JDK를 사용하면서 성능 이슈가 있다는 이야기가 있지만 2018년 11일월 게제된 오라클 블로그 글(https://blogs.oracle.com/java-platform-group/oracle-jdk-releases-for-java-11-and-later)에 따르면 JAVA 11부터는 아래 4가지 기능들(기존 Commercial로 제공이 되던 기능)까지 Open JDK에 포함이 되었기 때문에 Oracle JDK와 Open JDK는 본질적으로 동일하다고 이야기 합니다.
+Open JDK를 사용하면서 성능 이슈가 있다는 이야기가 있지만 [2018년 11일월 게재된 오라클 블로그 글](https://blogs.oracle.com/java-platform-group/oracle-jdk-releases-for-java-11-and-later)에 따르면 JAVA 11부터는 아래 4가지 기능들(기존 Commercial로 제공이 되던 기능)까지 Open JDK에 포함이 되었기 때문에 Oracle JDK와 Open JDK는 본질적으로 동일하다고 이야기 합니다.
 
 [JAVA 11부터 Open JDK에 포함된 기능들]
 
@@ -79,7 +75,7 @@ Open JDK를 사용하면서 성능 이슈가 있다는 이야기가 있지만 20
 
 단 Open JDK는 LTS 지원이 없는데 Oracle JDK와 Open JDK 차이를 더 자세히 알기 원하는 사람은 아래 글을 보시면 좋을 것 같습니다.
 
-https://www.baeldung.com/oracle-jdk-vs-openjdk
+[https://www.baeldung.com/oracle-jdk-vs-openjdk](https://www.baeldung.com/oracle-jdk-vs-openjdk)
 
 
 
@@ -97,7 +93,7 @@ JAVA 9부터 기존 2~3년 마다 있던 Major Update를 버리고 6개월마다
 
 예를 들어 JAVA 9은 이전 버전과 19,000개의 소스 코드 변화가 있었지만, JAVA9와 10은 2700개(JAVA 8과 JAVA 8u40의 차이와 비슷한 수준)의 소스 코드 변화가 있다고 한다. 관련 내용은 아래 글에서 더 자세히 확인할 수 있습니다. 
 
-https://blogs.oracle.com/java-platform-group/update-and-faq-on-the-java-se-release-cadence
+[https://blogs.oracle.com/java-platform-group/update-and-faq-on-the-java-se-release-cadence](https://blogs.oracle.com/java-platform-group/update-and-faq-on-the-java-se-release-cadence)
 
 현재 JAVA 8을 사용하고 있다면 JAVA 9 이상으로 넘어가는데 한 번의 큰 장애물이 있겠지만, 한번 전환하면 이후 출시되는 버전에 대해 적용 비용이 낮다는 점 그리고 계속해서 추가되는 편의기능들과 JAVA11부터 추가된 기존 Oracle 유료 기능들을 생각하면 충분히 전환을 시도해볼만하다고 생각합니다.
 
@@ -107,8 +103,8 @@ https://blogs.oracle.com/java-platform-group/update-and-faq-on-the-java-se-relea
 
 아래 2개 글을 참조하여 작성되었습니다.
 
-- https://medium.com/swlh/from-java-8-to-java-15-in-ten-minutes-f42d422a581e
-- https://en.wikipedia.org/wiki/Java_version_history
+- [https://medium.com/swlh/from-java-8-to-java-15-in-ten-minutes-f42d422a581e](https://medium.com/swlh/from-java-8-to-java-15-in-ten-minutes-f42d422a581e)
+- [https://en.wikipedia.org/wiki/Java_version_history](https://en.wikipedia.org/wiki/Java_version_history)
 
 ### JAVA8
 
@@ -122,11 +118,12 @@ https://blogs.oracle.com/java-platform-group/update-and-faq-on-the-java-se-relea
     - Stream은 흐름이라는 말로 배열이나 콜렉션 데이터를 람다를 활용하여 처리할 수 있도록 해줍니다.
     - 기존 명령형으로 되어 있던 데이터 처리(for, while 등)을 선언적인 방법으로 처리할 수 있게 해줍니다.
     - 아래 글에 stream이 정말 잘 설명이 되어 있습니다.
-    - https://futurecreator.github.io/2018/08/26/java-8-streams/
+    - [https://futurecreator.github.io/2018/08/26/java-8-streams/](https://futurecreator.github.io/2018/08/26/java-8-streams/)
 
 - Optional
   - 메소드에서 리턴에 값이 없음을 명시적으로 표현하거나, Null이 반환될 경우 시스템에 큰 에러를 발생시킬 수 있는 경우에만 리턴타입으로 사용될 수 있도록 만들어졌습니다. (그러나 별도 제약이 없기 때문에 메소드 리턴타입 이 외의 다양한 곳에서 사용이 되곤 합니다.)
-  - Optional이 의도하지 않게 사용이 되어 Optional을 제대로 사용하기 위한 지침 굉장히 많이 존재하니다.(https://dzone.com/articles/using-optional-correctly-is-not-optional)
+  - Optional이 의도하지 않게 사용이 되어 Optional을 제대로 사용하기 위한 지침 굉장히 많이 존재하니다.
+    - [https://dzone.com/articles/using-optional-correctly-is-not-optional](https://dzone.com/articles/using-optional-correctly-is-not-optional)
   - 사용하는데 지침이 많다는 것은 오용하기 쉽다는 이야기입니다. 또 동일한 기능을 3항연산자 등 간단한 처리로 대신할 수 있고 3항 연산자가 성능(속도)가 훨씬 빠릅니다. 개인적으로 대규모 프로젝트에서는 오히려 Optional은 쓰지 않는 것이 더 좋다고 판단하고 있다.
 
 ### JAVA9
