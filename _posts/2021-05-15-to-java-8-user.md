@@ -71,7 +71,7 @@ Open JDK를 사용하면서 성능 이슈가 있다는 이야기가 있지만 [2
 - [Application Class-Data Sharing](http://openjdk.java.net/jeps/310),
 - [ZGC](http://openjdk.java.net/jeps/333).
 
-이 내용들에 따르면 Oracle 정책 변화로 인해 JAVA 자체가 유료화로 된다고 생각했던 사람들(관련 정책 이야기를 들었을 당시의 나), Open JDK가 있는 것을 알지만 성능상 문제가 있을 것으로 생각되어 사용하지 않던 사람들은 **<u>오해를 풀고 JAVA 11 이상 Oracle Open JDK(다른 버전의 Open JDK도 있어 Oracle에서 배포한 Open JDK를 Oracle Open JDK라고 함)를 사용해 볼 수 있습니다.</u>**
+이 내용들에 따르면 Oracle 정책 변화로 인해 JAVA 자체가 유료화로 된다고 생각했던 사람들(관련 정책 이야기를 들었을 당시의 나), Open JDK가 있는 것을 알지만 성능상 문제가 있을 것으로 생각되어 사용하지 않던 사람들은 **<u>오해를 풀고 JAVA 11 이상 Oracle Open JDK를 사용해 볼 수 있습니다.</u>** 다른 버전의 Open JDK도 있어 Oracle Open JDK라고 이야기 했으며 [다른 Open JDK 종류를 설명해놓은 글](https://u2ful.tistory.com/15)들도 함께 보면 좋을 것 같다.
 
 단 Open JDK는 LTS 지원이 없는데 Oracle JDK와 Open JDK 차이를 더 자세히 알기 원하는 사람은 아래 글을 보시면 좋을 것 같습니다.
 
