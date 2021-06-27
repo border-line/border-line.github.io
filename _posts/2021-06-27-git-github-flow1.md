@@ -45,17 +45,17 @@ Upstream이 있고 Origin을 둔 이유는 아래 2가지 입니다.
 
 프로그램 성장과정이 아래와 같이 기록되는 것이 아니라
 
-![image-20210627121844305](/Users/goodtool/workspace/beautifultools/blog/assets/images/image-20210627121844305.png) 
+![image-20210627121844305](/assets/images/image-20210627121844305.png) 
 
 아래와 같이 기록되기를 원했습니다.
 
-![image-20210627121805539](/Users/goodtool/workspace/beautifultools/blog/assets/images/image-20210627121805539.png)
+![image-20210627121805539](/assets/images/image-20210627121805539.png)
 
 
 
 그래서 하나의 기능 개발할 때 사용되는 명령어들은 대략적으로 아래와 같은 Flow를 따르도록 설계해 보았습니다.
 
-![image-20210627122020938](/Users/goodtool/workspace/beautifultools/blog/assets/images/image-20210627122020938.png)
+![image-20210627122020938](/assets/images/image-20210627122020938.png)
 
 
 
