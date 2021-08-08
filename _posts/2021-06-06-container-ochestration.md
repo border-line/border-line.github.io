@@ -1,12 +1,14 @@
 ---
 layout: single
 title : "MSA - Container Ochestration"
-category: "recommend"
+category: "msa"
 
 
 ---
 
->  edX에서 쿠버네티스를 공부하면서 알게 된 내용을 정리하고 공유합니다.
+>  [edX에서 쿠버네티스 강의](https://www.edx.org/course/introduction-to-kubernetes?index=product&queryID=f10115f3a195d94ea6b56f7284f6ae91&position=1)를 공부하면서 알게 된 내용을 정리하고 공유합니다.
+
+이를 해결하기 위해서 캡슐화된 경량 실행 환경을 제공하는 어플리케이션 컨테이너가 좋은 대안이 될 수 있습니다. 컨테이너는 항상 일관된 개발, 테스트 환경을 제공하며 하나의 서버에서 서로 독립적으로 여러개의 어플리케이션을 실행할 수 있도록 해줍니다. 또 컨테이너를 사용하면 개별 모듈을 유연하게 확장할 수 있고 자동화 툴의 도움을 많이 받을 수 있습니다. 
 
 ## Container
 
