@@ -2,6 +2,7 @@
 layout: single
 title: "Docker Mysql Customization"
 category: "tech"
+tags: [docker, mysql, db]
 ---
 
 mysql을 docker로 사용하다보면 데이터 추가, 유저 추가 등 기본 설정을 추가한 이미지를 만들고 싶은 경우가 많습니다.
