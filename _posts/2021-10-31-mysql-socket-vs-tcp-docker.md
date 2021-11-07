@@ -3,8 +3,6 @@ layout: single
 title: "Mysql on Docker - Socket vs TCP"
 category: "tech"
 tags: [mysql, docker]
-
-
 ---
 
 [docker mysql 공식 이미지](https://hub.docker.com/_/mysql)에 프로젝트에 사용되는 스키마와 더미 데이터를 추가한 이미지를 만들어 사용하고 있습니다.
@@ -13,7 +11,7 @@ tags: [mysql, docker]
 
 ### 1. 로컬 MySQL은 왜 떠 있었니..
 
-해결이 오래 걸리도록 했던 가장 큰 이유는 로컬에 brew로 설치한 MySQL이 실행되고 있었기 때문입니다. docker mysql container를 **-dp3306:3306** 옵션으로 실행했고 문제 없이 실행되었기 때문에 로컬에는 mysql이 실행되어 있지 않은 것으로 판단했습니다.
+해결이 오래 걸리도록 했던 가장 큰 이유는 로컬에 brew로 설치한 MySQL이 실행되고 있었기 때문입니다. docker mysql container를 `-dp3306:3306` 옵션으로 실행했고 문제 없이 실행되었기 때문에 로컬에는 mysql이 실행되어 있지 않은 것으로 판단했습니다.
 
 그래서 아래 이미지와 같이 Acess denied가 나오는 것이 docker mysql container에서 발생한 것으로 판단하고 계정 설정 문제 쪽으로 검색하고 조치를 취했습니다.
 
@@ -21,7 +19,7 @@ tags: [mysql, docker]
 
 하지만 어떤 조치를 취해도 위 에러는 계속 발생했는데 그 이유는 위 명령어는 로컬에 있는 mysql로 접속하는 명령어이기 때문입니다. 그러니 당연히 docker mysql container에 설정한 계정 정보로는 Access denied가 떨어질 수밖에 없었습니다.
 
-로컬에 mysql이 떠 있다는 것은 어떤 조치를 해도 해결이 되지 않는다는 것이 이상해서 확인해 본 것이었데 발견해서 다행이었습니다. 
+로컬에 mysql이 떠 있다는 것은 어떤 조치를 해도 해결이 되지 않는다는 것이 이상해서 확인해 본 것이었데 발견해서 다행이었습니다.
 
 ### 2. Socket vs TCP
 
@@ -33,7 +31,7 @@ tags: [mysql, docker]
 
 한가지 더 알아야할 것은 동일 호스트 내에서 접근 시에 Socket 사용이 장려하는 것 때문인지 host 옵션을 localhost로 주어도 TCP가 아닌 Socket 방식으로 동작한다는 점입니다. 그래서 동작이 동일할 것으로 보이는 아래 두 명령어는 다른 결과를 보입니다.
 
-- **mysql -hlocalhost -uroot -p** : Socket 방식을 이용하며 Socket 통신에 사용되는 파일이 없는 경우 에러 발생
-- **mysql -h127.0.0.1 -uroot -p** : TCP 방식을 이용하며 3306 포트에 연결되어 있는 docker에 정상 접속
+- `mysql -hlocalhost -uroot -p` : Socket 방식을 이용하며 Socket 통신에 사용되는 파일이 없는 경우 에러 발생
+- `mysql -h127.0.0.1 -uroot -p` : TCP 방식을 이용하며 3306 포트에 연결되어 있는 docker에 정상 접속
 
 결론적으로는 docker로 실행한 mysql에 docker를 실행한 기기에서 접근하기 위해서는 **<u>host를 localhost가 아닌 127.0.0.1로 설정</u>**하면 됩니다.
