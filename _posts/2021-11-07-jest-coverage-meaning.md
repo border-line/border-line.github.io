@@ -7,7 +7,7 @@ tags: [jest, coverage]
 
 ---
 
-Github Action을 이용해 Test Coverage가 어느 이상 되지 않으면 PR이 닫히도록 하기로 했습니다.
+사이드 프로젝트를 진행하면서 Github Action을 이용해 Test Coverage가 어느 이상 되지 않으면 PR이 자동으로 닫히도록 하려고 했습니다.
 
 NestJS를 사용하고 있고 테스트 프레임워크는 Jest를 사용하고 있습니다. Jest는 아래와 같이 4개의 다른 기준으로 Coverage를 보여줍니다.
 
