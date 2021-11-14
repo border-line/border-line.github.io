@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Docker Mysql Time, Language"
+title: "Docker Mysql Timezone, 한글 문제"
 category: "tech"
 tags: [docker, mysql]
 
