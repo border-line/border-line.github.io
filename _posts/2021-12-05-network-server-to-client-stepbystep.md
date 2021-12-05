@@ -14,7 +14,7 @@ Level 1부터 7까지 있으며 **Level 2 부터 있는 밑줄은 전 단계에 
 
 제가 네트워크 전문가가 아니다보니 작성한 내용 중에 정확하지 않은 부분이 있을 수 있는데 확인 되는 것들은 메일(lord1229@gmail.com)로 피드백 전달 부탁 드립니다. (곧 댓글 기능 추가 예정입니다..!) 
 
-자신에게 해당하는 레벨로 가서 보기 시작하는 것을 추천드리며 레벨마다 적혀 있는 태그(일반인 등)는 쉬운 이해를 위해 달아 놓은 것으로 정확하게 매칭되지 않을 수 있다는 점 참고 부탁드립니다.
+**<u>자신에게 해당하는 레벨로 가서 보기 시작하는 것을 추천</u>**드립니다. 레벨마다 적혀 있는 태그(일반인 등)는 쉬운 이해를 위해 달아 놓은 것으로 정확하게 매칭되지 않을 수 있다는 점 참고 부탁드립니다.
 
 ## Level 1 (일반인)
 
@@ -79,11 +79,11 @@ Level 1부터 7까지 있으며 **Level 2 부터 있는 밑줄은 전 단계에 
 8. 브라우저가 응답 받은 html 코드를 내가 보기 좋게 보여준다.
 
 9. **<u>브라우저는 효율적인 통신을 위해 동일 도메인에 대해 최대 6개의 TCP 연결을 살려둔다.</u>**
-   - 도메인별 최대 connection은 브라우저마다 다름.
+   - **<u>도메인별 최대 connection은 브라우저마다 다름.</u>**
    
-   - 관련 RFC : https://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html
+   - **<u>관련 RFC : https://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html</u>**
    
-   - 관련 글 : https://docs.pushtechnology.com/cloud/latest/manual/html/designguide/solution/support/connection_limitations.html
+   - **<u>관련 글 : https://docs.pushtechnology.com/cloud/latest/manual/html/designguide/solution/support/connection_limitations.html</u>**
    
 10. **<u>브라우저가 종료될 때 또는 브라우저가 일정 이상 사용이 되지 않은 연결을 닫을 때 TCP 4 handshaking을 사용해 연결 종료</u>**
     - **<u>브라우조 종료 및 브라우저가 일정 이상 사용이 되지 않은 연결을 닫을 때 TCP 연결을 닫는다는 것은 개인적인 추정.</u>**
