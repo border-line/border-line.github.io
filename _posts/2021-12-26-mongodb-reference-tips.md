@@ -18,8 +18,9 @@ MongoDB에서도 RDBMS와 비슷한 lookup 기능을 제공하지만 성능이�
 
 연관 관계에 있는 데이터를 2가지 방법으로 표현할 수 있습니다.
 
-1. Embeded Document
-   아래 예시에서 author 안에 books를 넣는 것처럼 Document안에 Document를 넣는 방식입니다.
+### 1. Embeded Document
+
+아래 예시에서 author 안에 books를 넣는 것처럼 Document안에 Document를 넣는 방식입니다.
 
 ```json
 {
@@ -38,8 +39,9 @@ MongoDB에서도 RDBMS와 비슷한 lookup 기능을 제공하지만 성능이�
 }
 ```
 
-2. Reference
-   연관 데이터를 서로 다른 collection에 두고 key로 참조하는 방식입니다.
+### 2. Reference
+
+연관 데이터를 서로 다른 collection에 두고 key로 참조하는 방식입니다.
 
 ```json
 {
@@ -61,7 +63,10 @@ MongoDB에서도 RDBMS와 비슷한 lookup 기능을 제공하지만 성능이�
 }
 ```
 
-이 떄 refernce key를 어디에 두느냐에 따라 성능 차이가 있습니다. 위 예시의 경우 key를 one to many에서 many인 books 쪽에 두었는데 이는 books에 데이터를 넣거나 뺄 때 author를 업데이트하지 않아도 되기 때문입니다.
+이 때 refernce key를 어디에 두느냐에 따라 성능 차이가 있습니다.
+
+위 예시의 경우 key를 one to many에서 many인 books 쪽에 두었는데 이는 books에 데이터를 넣거나 뺄 때 author를 업데이트하지 않아도 되기 때문입니다.
+
 key를 author쪽에 두면 books가 생기거나 업데이트 될 때마다 author를 업데이트해주어야 하는 문제가 있습니다.
 
 하지만 read가 주요 액션이고 one to many 관계에서 one 데이터가 주로 읽히며 이 때 many쪽 key가 필요한 상황이라면 편의를 위해 one 쪽에 reference key를 둘 수도 있습니다.
