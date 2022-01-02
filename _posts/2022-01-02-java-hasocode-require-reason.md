@@ -13,10 +13,8 @@ tags: [java]
 ### 1. Object 명세
 
 일반적으로 생각해도 두 Object가 같다면 동일한 hashCode를 가져야 한다.
-
 그렇지 않다면 프로그램이 동작하면서 예상하지 못한 동작을 하게 될 수도 있다.
 
-<br/>
 그렇기 때문에 equals를 재정의하는 경우에 hashCode도 함께 재정의 해주어야 한다.
 
 ### 2. HashMap, HashSet
